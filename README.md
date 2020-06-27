@@ -1,5 +1,5 @@
 # N-Queen
-The N Queen is the problem of placing N chess queens on an N×N chessboard so that no two queens attack each other.
+The N Queen problem is problem of placing N chess queens on an N×N chessboard so that no two queens attack each other.
 There are different approaches to solve this, I am choosing Back track and Genetic algorithm and highlighting the pros and cons of both approaches.
 
 ## Little introduction to understand the solutions:

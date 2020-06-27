@@ -1,13 +1,13 @@
-## N-Queen
+# N-Queen
 The N Queen is the problem of placing N chess queens on an N×N chessboard so that no two queens attack each other.
 There are different approaches to solve this, I am choosing Back track and Genetic algorithm and highlighting the pros and cons of both approaches.
 
-# Little introduction to understand the solutions:
+## Little introduction to understand the solutions:
 
 - There are total 64!/(56!*8! ) different possible combinations to place 8 queens on 8*8 chess board.
 - Out of which there are only 92 possible combinations to place 8 queens on 8*8 chess board without attacking each other.
 
-# 1. Backtracking Algorithm
+## 1. Backtracking Algorithm
 - Backtracking is an approach for exploring problems that involve making choices from a set of possible choices 
 - The worst case “brute force” solution for the N-queens puzzle has an O(n^n) time complexity.
 - After all optimisation avoiding same column and diagonal, time complexity can be reduced to O(n!) I.e for 8 queens 8! = 40320.
@@ -17,7 +17,7 @@ There are different approaches to solve this, I am choosing Back track and Genet
 - More efficient for smaller N
 - Difficult to find solution for larger N with backtracking iterations(might not work for huge N), number of iteration increases exponentially as N increases.
 
-# 2. Genetic Algorithm 
+## 2. Genetic Algorithm 
 - Genetic algorithm works by creating a few random solution(within the range) and then start eliminating the faulty ones to get the right fit or result with crossover and mutations.
 - From my understanding it is not a good approach solve 8 queen problem and little complex than back track approach.
 - While Randomisation technique is good for AI and Machine learning programms, but it comes with a cost of space because we have to create more random  possible combinations to get attest one valid solution.

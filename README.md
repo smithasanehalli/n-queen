@@ -10,7 +10,7 @@ There are different approaches to solve this, I am choosing Back track and Genet
 ## 1. Backtracking Algorithm
 - Backtracking is an approach for exploring problems that involve making choices from a set of possible choices 
 - The worst case “brute force” solution for the N-queens puzzle has an O(n^n) time complexity.
-- After all optimisation avoiding same column and diagonal, time complexity can be reduced to O(n!) I.e for 8 queens 8! = 40320.
+- After all optimisation avoiding same column and diagonal(using depth first search), time complexity can be reduced to O(n!) I.e for 8 queens 8! = 40320.
 - This approach is faster if we only need any one solution out of 92 solutions.
 - Number of iterations grows exponentially to find out all 92 solution 
 - Best approach in terms of space required because as soon as we hit a blocking state we back track and remove the state we don’t need to save all states.

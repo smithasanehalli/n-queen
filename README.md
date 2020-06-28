@@ -15,13 +15,13 @@ There are different approaches to solve this, I am choosing Back track and Genet
 - Number of iterations grows exponentially to find out all 92 solution 
 - Best approach in terms of space required because as soon as we hit a blocking state we back track and remove the state we don’t need to save all states.
 - More efficient for smaller N
-- Difficult to find solution for larger N with backtracking iterations(might not work for huge N), number of iteration increases exponentially as N increases.
+- As the N increases it becomes slower, when N=26 it would take forever!. Number of iteration increases exponentially as N increases.
 
 ## 2. Genetic Algorithm 
 - Genetic algorithm works by creating a few random solution(within the range) and then start eliminating the faulty ones to get the right fit or result with crossover and mutations.
-- From my understanding it is not a good approach solve 8 queen problem and little complex than back track approach.
+- It is not a good approach solve 8 queen problem and little complex than back track approach for smaller N value.
 - While Randomisation technique is good for AI and Machine learning programms, but it comes with a cost of space because we have to create more random  possible combinations to get attest one valid solution.
-- For N queen problem, number of possible choices are more 64!/56!*8! and valid solutions are only 92, this technique will take more time to get the result because possible choices are huge compared to valid solutions, this technique works good for larger values of N(something like 25 and above) 
+- For N queen problem, number of possible choices are more 64!/56!*8! and valid solutions are only 92, this technique will take more time to get the result because possible choices are huge compared to valid solutions, this technique works good for larger values of N(something like 26 and above) 
 - where the possible solutions are more and time required to eliminate faulty ones will be less hense chances of finding the solution is more.
 - Analogy is similar to picking a random fruit from a basket of fruits to identify whether it is good or bad.If the basket contains 50 fruits, 45 good and 5 rotten, worst case takes at least 6 picks to get a good fruit but If the basket has 45 rotten fruit and only 5 good fruits, worst case takes at least 46 picks to get a good fruit.
 - Along with the space factor, time taken to find solution increases when there are more possible combinations and very few valid combinations
